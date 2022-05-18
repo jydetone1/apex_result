@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import Home from './pages/home/Home';
+import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 
-function App() {
+const theme = createTheme({
+  typography: {
+    fontFamily: ['Montserrat', 'sans-serif'].join(','),
+  },
+});
+
+const App = () => {
+  const appHeight = () => {
+    document.documentElement.style.setProperty(
+      '--app-height',
+      `${window.innerHeight}px`
+    );
+  };
+
+  useEffect(() => {
+    appHeight();
+    window.addEventListener('resize', appHeight);
+    return () => {
+      window.removeEventListener('resize', appHeight);
+    };
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div>
+        <Home />
+      </div>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
