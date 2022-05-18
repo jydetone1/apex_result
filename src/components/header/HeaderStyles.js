@@ -70,7 +70,6 @@ export const useStyles = makeStyles((theme) => ({
       backgroundPosition: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover ',
-      backgroundPosition: 'cover',
     },
     position: 'relative',
     '&::before': {

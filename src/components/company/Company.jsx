@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import debt from '../../assets/images/debt.png';
 import { Grid } from '@material-ui/core';

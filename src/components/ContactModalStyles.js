@@ -42,7 +42,6 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: '16px',
       lineHeight: '22px',
       color: '#2E3A59',
-      lineHeight: '22px',
       fontFamily: 'FS Meridian',
       margin: 0,
     },
