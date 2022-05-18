@@ -172,8 +172,6 @@ const ContactModal = (props) => {
                 </div>
               </Grid>
             </Grid>
-            {/* </Grid>
-            </Grid> */}
           </CardContent>
         </Card>
       </Modal>
