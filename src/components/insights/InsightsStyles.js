@@ -14,15 +14,16 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   insightMenuItems: {
-    display: 'flex',
+    display: 'inline-flex',
     alignItems: 'center',
-    gap: '2rem',
+    gap: '1rem',
     fontWeight: 400,
     fontSize: '26px',
     lineHeight: '32px',
     color: '#8F9BB3',
     textTransform: 'capitalize',
     marginBottom: '2rem',
+    cursor: 'pointer',
   },
 
   borderInsights: {
@@ -177,5 +178,9 @@ export const useStyles = makeStyles((theme) => ({
       width: '100%',
       height: '204px',
     },
+  },
+  addActive: {
+    color: '#295CD6',
+    borderBottom: '2px solid #295CD6',
   },
 }));

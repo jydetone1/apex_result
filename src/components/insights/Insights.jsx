@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 import habitant from '../../assets/images/habitant.png';
 import art from '../../assets/images/art.png';
 import create from '../../assets/images/create.png';
@@ -7,7 +9,11 @@ import earth from '../../assets/images/earth.png';
 import { Button, TextField, Grid } from '@material-ui/core';
 
 import { useStyles } from './InsightsStyles';
+
+const clickOnActiveMenu = ['press', 'blog', 'video', 'news'];
+
 const Insights = () => {
+  const [addActiveInsights, setAddActiveInsights] = useState(null);
   const classes = useStyles();
 
   return (
@@ -17,11 +23,19 @@ const Insights = () => {
         <Grid container>
           <Grid item xs={12} md={6} className={classes.contentDesc}>
             <div className={classes.insightMenuItems}>
-              <span>press</span>
-              <span>blog</span>
-              <span>video</span>
-              <span>news</span>
+              {clickOnActiveMenu.map((item, index) => (
+                <span
+                  key={index}
+                  onClick={() => setAddActiveInsights(item)}
+                  className={` ${
+                    addActiveInsights == item ? classes.addActive : ''
+                  }`}
+                >
+                  {item}
+                </span>
+              ))}
             </div>
+
             <img
               src={earth}
               alt={'earth'}

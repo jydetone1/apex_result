@@ -6,6 +6,7 @@ import WhatWeDo from '../../components/whatwedo/WhatWeDo';
 import Insights from '../../components/insights/Insights';
 import Carrer from '../../components/carrer/Carrer';
 import Footer from '../../components/footer/Footer';
+import ContactMobile from '../../components/ContactMobile';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <WhatWeDo />
       <Insights />
       <Carrer />
+      <ContactMobile />
       <Footer />
     </div>
   );

@@ -128,6 +128,7 @@ const Capabilities = () => {
                 <span> -Industrial/Last Mile Logistics </span>
                 <span>- Creative Office / Co-Working </span>
               </div>
+              <Divider className={classes.divider} />
             </Grid>
           </Grid>
         </section>
