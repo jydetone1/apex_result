@@ -159,7 +159,7 @@ export const useStyles = makeStyles((theme) => ({
     lineHeight: '20px',
     padding: '0.7rem 3.5rem',
     '&:hover': {
-      backgroundColor: '#ffffff',
+      backgroundColor: '#295CD6',
       opacity: '0.8',
       boxShadow: 'none',
     },
