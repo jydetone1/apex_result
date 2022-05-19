@@ -7,6 +7,10 @@ export const useStyles = makeStyles((theme) => ({
     lineHeight: '48px',
     color: '#2E3A59',
     marginBottom: '12px',
+    textTransform: 'capitalize',
+    [theme.breakpoints.down('xs')]: {
+      marginBottom: '1.8rem',
+    },
   },
   companyWrapper: {
     padding: '0 5%',
@@ -34,7 +38,7 @@ export const useStyles = makeStyles((theme) => ({
       width: '100%',
       right: ' 0',
       bottom: '0',
-      marginBottom: '1rem',
+      top: '-6.9%',
     },
     '& > p': {
       color: '#ffffff',
@@ -56,6 +60,14 @@ export const useStyles = makeStyles((theme) => ({
     order: 2,
     [theme.breakpoints.down('xs')]: {
       order: 1,
+    },
+  },
+
+  companyImg: {
+    [theme.breakpoints.down('xs')]: {
+      width: '100%',
+      height: '193px',
+      bjectFit: 'cover',
     },
   },
 }));

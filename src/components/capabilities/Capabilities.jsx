@@ -20,7 +20,7 @@ const Capabilities = () => {
   return (
     <>
       {innerWidth && innerWidth >= 540 ? (
-        <section className={classes.cabilitiesSectionWrapper}>
+        <section className={classes.capabilitiesSectionWrapper}>
           <Typography className={classes.capabilities} variant='h4'>
             capabilities
           </Typography>
@@ -71,13 +71,17 @@ const Capabilities = () => {
           </Grid>
         </section>
       ) : (
-        <section className={classes.cabilitiesSectionWrapper}>
+        <section className={classes.capabilitiesSectionWrapper}>
           <Typography className={classes.capabilities} variant='h4'>
             capabilities
           </Typography>
           <Grid container spacing={1}>
             <Grid item xs={12} md={6}>
-              <img src={house} alt='house' />
+              <img
+                src={house}
+                alt='house'
+                className={classes.descriptionPropertiesImg}
+              />
               <span className={classes.aboutInvestment}>
                 Agile Investment Sales
               </span>
@@ -85,7 +89,11 @@ const Capabilities = () => {
             </Grid>
 
             <Grid item xs={12} md={6}>
-              <img src={writter} alt='house' />
+              <img
+                src={writter}
+                alt='house'
+                className={classes.descriptionPropertiesImg}
+              />
               <span className={classes.aboutInvestment}>
                 Debt & Advisory Services
               </span>
@@ -93,7 +101,11 @@ const Capabilities = () => {
             </Grid>
 
             <Grid item xs={12} md={6}>
-              <img src={laptop} alt='laptop' />
+              <img
+                src={laptop}
+                alt='laptop'
+                className={classes.descriptionPropertiesImg}
+              />
               <span className={classes.aboutInvestment}>
                 Marketing & Concept Development
               </span>
@@ -101,7 +113,11 @@ const Capabilities = () => {
             </Grid>
 
             <Grid item xs={12} md={6}>
-              <img src={brief} alt='laptop' />
+              <img
+                src={brief}
+                alt='laptop'
+                className={classes.descriptionPropertiesImg}
+              />
               <div className={classes.creativeLeasing}>
                 <Typography className={classes.creative} variant='h4'>
                   Creative leasing & Consulting

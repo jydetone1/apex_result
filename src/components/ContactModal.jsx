@@ -57,7 +57,6 @@ const ContactModal = (props) => {
                     <img
                       src={close}
                       alt='close'
-                      className={classes.closeIcon}
                     />
                   </Button>
                   <Grid container spacing={3} className={classes.ContactGrid}>
@@ -74,7 +73,7 @@ const ContactModal = (props) => {
                           size='small'
                           name='name'
                           type='text'
-                          className={classes.textField}
+
                         />
                       </div>
                     </Grid>
@@ -136,9 +135,9 @@ const ContactModal = (props) => {
                       <div className={classes.contactTextField}>
                         <span>Full Name</span>
 
-                        <FormControl className={classes.formControl} fullWidth>
+                        <FormControl fullWidth>
                           <Select
-                            className={classes.select}
+
                             variant='outlined'
                             labelId='demo-simple-select-label'
                           >

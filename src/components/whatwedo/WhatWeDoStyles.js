@@ -16,16 +16,15 @@ export const useStyles = makeStyles((theme) => ({
   },
   whatWeOffer: {
     background: '#F7F9FC',
-    padding: '0 5%',
-    marginTop: '0',
+    padding: '0rem 5%',
   },
 
   aboutActivities: {
     border: '1px solid #E4E9F2',
+    minHeight: '100%',
     [theme.breakpoints.down('xs')]: {
       border: 'none',
     },
-    minHeight: '100%',
     '& :nth-child(2)': {
       border: '1px solid ##295CD6',
     },

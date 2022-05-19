@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/styles';
 
 export const useStyles = makeStyles((theme) => ({
   insightWrapper: {
-    padding: '0 5%',
+    padding: '2rem 5%',
     '& > h4': {
       fontWeight: 500,
       fontSize: '48px',
@@ -29,6 +29,9 @@ export const useStyles = makeStyles((theme) => ({
     borderBottom: '1px solid #E4E9F2',
     marginTop: '1rem',
     marginBottom: '3rem',
+    [theme.breakpoints.down('xs')]: {
+      borderBottom: 'none',
+    },
   },
   blogPostDisplay: {
     display: 'flex',
@@ -38,13 +41,23 @@ export const useStyles = makeStyles((theme) => ({
       flexDirection: 'column',
     },
   },
+  contentDesc: {
+    position: 'relative',
+  },
 
   PostDateDesc: {
     background: '#ffffff',
-    position: 'relative',
-    bottom: '0',
+    position: 'absolute',
+    bottom: '15%',
     left: 0,
-    top: '-20%',
+    width: '80%',
+    paddingLeft: '2rem',
+    paddingTop: '1rem',
+    [theme.breakpoints.down('xs')]: {
+      width: '100%',
+      position: 'static',
+    },
+
     '& > small': {
       fontWeight: 500,
       fontSize: '15px',
@@ -105,7 +118,7 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
 
-  subcribeWrapper: {
+  subscribeWrapper: {
     background: '#ffffff',
   },
 
@@ -157,6 +170,12 @@ export const useStyles = makeStyles((theme) => ({
       flexDirection: 'column',
       width: '100%',
       padding: '0 1rem',
+    },
+  },
+  insightRandomImg: {
+    [theme.breakpoints.down('xs')]: {
+      width: '100%',
+      height: '204px',
     },
   },
 }));

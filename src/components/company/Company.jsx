@@ -43,7 +43,7 @@ const Company = () => {
         </Grid>
 
         <Grid item xs={12} md={6} className={classes.item2}>
-          <img src={debt} alt={'debt'} />
+          <img src={debt} alt={'debt'} className={classes.companyImg} />
           <div className={classes.aboutCommercials}>
             <p>
               WE LOOK AT COMMERCIAL REAL ESTATE THROUGH A DIFFERENT LENS THAN

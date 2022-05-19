@@ -72,6 +72,13 @@ export const useStyles = makeStyles((theme) => ({
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
     alignItems: 'center',
+    [theme.breakpoints.down('xs')]: {
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      gap: '1.5rem',
+    },
 
     '& > span': {
       fontWeight: 400,

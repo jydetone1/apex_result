@@ -1,6 +1,12 @@
 import { makeStyles } from '@material-ui/styles';
 
 export const useStyles = makeStyles((theme) => ({
+  carrerWrapper: {
+    paddingRight: '0.5rem',
+    [theme.breakpoints.down('xs')]: {
+      paddingRight: '0',
+    },
+  },
   carrerContent: {
     background: '#F7F9FC',
   },
@@ -131,5 +137,12 @@ export const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'space-between',
     paddingTop: '2rem',
+  },
+
+  IslandImg: {
+    [theme.breakpoints.down('xs')]: {
+      width: '100%',
+      height: '242px',
+    },
   },
 }));

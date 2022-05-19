@@ -3,7 +3,7 @@ import Headerbg from '../../assets/images/headerBg.jpg';
 
 export const useStyles = makeStyles((theme) => ({
   headerWrapper: {
-    position: 'sticky',
+    position: 'fixed',
     display: 'grid',
     gridTemplateColumns: '1fr 100px',
     alignItems: 'center',
@@ -13,9 +13,8 @@ export const useStyles = makeStyles((theme) => ({
     top: '0',
     left: '0',
     right: '0',
-    [theme.breakpoints.down('xs')]: {
-      padding: '0 5% ',
-    },
+    padding: '0 0 0 5% ',
+    [theme.breakpoints.down('xs')]: {},
   },
   menuItemBg: {
     display: 'flex',
@@ -23,6 +22,9 @@ export const useStyles = makeStyles((theme) => ({
     width: '100%',
     alignItems: 'center',
     height: '100%',
+    [theme.breakpoints.down('xs')]: {
+      display: 'none',
+    },
   },
 
   menuItem: {
@@ -60,39 +62,38 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   exploreDescription: {
-    backgroundImage: `url(${Headerbg})`,
-    backgroundPosition: 'cover',
+    backgroundImage: `url(${Headerbg})  `,
     backgroundRepeat: 'no-repeat',
     backgroundSize: '93%',
     height: '50vh',
+    position: 'relative',
     [theme.breakpoints.down('xs')]: {
       height: '100vh',
+      //   height: '100vh',
+      backgroundSize: 'cover',
       backgroundPosition: 'cover',
       backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover ',
-    },
-    position: 'relative',
-    '&::before': {
-      content: '""',
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: '93%',
-      height: '50vh',
-      display: 'block',
-      backgroundColor: 'rgba(0,0,0,0.5)',
+      backgroundSize: 'cover',
     },
   },
 
   exploreRef: {
     position: 'absolute',
-    bottom: '-6%',
+    height: '50vh',
+    width: '93%',
+    bottom: '0',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-end',
     zIndex: 1,
-    padding: '30px 5%',
+    padding: '0 5%',
+    backgroundColor: 'rgba(0,0,0,0.5)',
+
     [theme.breakpoints.down('xs')]: {
-      width: '100%',
       bottom: '-3%',
       padding: 'unset',
+      height: '100vh',
+      width: '100%',
     },
   },
 
@@ -102,7 +103,7 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: '32px',
     lineHeight: '140%',
     maxWidth: '45%',
-    marginBottom: '2rem',
+    marginBottom: '2.5rem',
     [theme.breakpoints.down('xs')]: {
       display: 'none',
     },
@@ -111,7 +112,7 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: '#214AAD',
     color: '#ffffff',
     textTransform: 'capitalize',
-    width: '20%',
+    width: '30%',
     fontWeight: 500,
     fontSize: '14px',
     lineHeight: '20px',

@@ -17,7 +17,7 @@ export const useStyles = makeStyles((theme) => ({
     objectFit: 'cover',
   },
 
-  cabilitiesSectionWrapper: {
+  capabilitiesSectionWrapper: {
     padding: '0 5%',
   },
 
@@ -30,6 +30,12 @@ export const useStyles = makeStyles((theme) => ({
     fontWeight: 400,
     fontSize: '16px',
     lineHeight: '28px',
+    '& span': {
+      fontWeight: 400,
+      fontsize: '16px',
+      lineHeight: '28px',
+      color: '#2E3A59',
+    },
   },
 
   groupImgCreative: {
@@ -42,6 +48,7 @@ export const useStyles = makeStyles((theme) => ({
     fontsize: '26px',
     lineHeight: '32px',
     color: '#2E3A59',
+    marginBottom: '0.5rem',
   },
 
   btnAgile: {
@@ -121,6 +128,11 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('xs')]: {
       marginTop: '2rem',
       marginBottom: '2rem',
+    },
+  },
+  descriptionPropertiesImg: {
+    [theme.breakpoints.down('xs')]: {
+      width: '100%',
     },
   },
 }));

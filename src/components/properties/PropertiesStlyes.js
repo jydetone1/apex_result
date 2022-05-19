@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/styles';
 import map from '../../assets/images/map.jpg';
 
 export const useStyles = makeStyles((theme) => ({
-  proptertiesText: {
+  propertiesText: {
     fontWeight: 500,
     fontSize: '36px',
     lineHeight: '48px',
@@ -62,7 +62,8 @@ export const useStyles = makeStyles((theme) => ({
     gap: '1rem',
     padding: '2rem 2rem',
     [theme.breakpoints.down('xs')]: {
-      left: '15%',
+      left: '13%',
+      position: 'static ',
     },
   },
   btnGroup: {

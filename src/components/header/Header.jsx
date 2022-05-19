@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-
-import { Link } from 'react-scroll';
 import ContactModal from '../../components/ContactModal';
 import logo from '../../assets/images/logo.png';
-import arrowRight from '../../assets/images/arrowRight.svg';
+import arrowRight from '../../assets/images/arrow-one.png';
 import logoMobile from '../../assets/images/logo-mobile.svg';
 import './header.css';
 import useResizeWidth from '../../constant/useResizeWidth';
@@ -24,56 +22,16 @@ const Header = () => {
 
   return (
     <div>
-      {innerWidth && innerWidth > 540 ? (
+      {innerWidth > 540 ? (
         <header className={classes.headerWrapper}>
           <div className={classes.menuItemBg}>
             <img src={logo} alt='logo' />
             <nav className={classes.menuItem}>
               <ul>
-                <li>
-                  <Link
-                    to='home'
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={50}
-                  >
-                    home
-                  </Link>{' '}
-                </li>
-                <li>
-                  <Link
-                    to='properties'
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={50}
-                  >
-                    properties
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to='company'
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={50}
-                  >
-                    company
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to='latest'
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={50}
-                  >
-                    latest
-                  </Link>
-                </li>
+                <li>home</li>
+                <li>properties</li>
+                <li>company</li>
+                <li>latest</li>
               </ul>
             </nav>
             <div className={classes.contactMenu}>
@@ -93,7 +51,7 @@ const Header = () => {
           <div className={`toggle_menu_nav ${openMenuNav ? 'active' : ''}`}>
             <div className={'burger_nav_menu'}>
               <span>
-                Home{' '}
+                Home
                 <img
                   src={arrowRight}
                   alt={'arrowRIght'}
@@ -101,7 +59,7 @@ const Header = () => {
                 />
               </span>
               <span>
-                Capabilities{' '}
+                Capabilities
                 <img
                   src={arrowRight}
                   alt={'arrowRight'}
@@ -160,15 +118,15 @@ const Header = () => {
           <div className={`toggle_menu_nav ${openMenuNav ? 'active' : ''}`}>
             <div className={'burger_nav_menu'}>
               <span>
-                Home{' '}
+                Home
                 <img
                   src={arrowRight}
-                  alt={'arrowRIght'}
+                  alt={'arrowRight'}
                   className={'right_arrow'}
                 />
               </span>
               <span>
-                Capabilities{' '}
+                Capabilities
                 <img
                   src={arrowRight}
                   alt={'arrowRight'}

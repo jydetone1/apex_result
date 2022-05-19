@@ -8,7 +8,7 @@ const Carrer = () => {
 
   return (
     <>
-      <section>
+      <section className={classes.carrerWrapper}>
         <Grid container>
           <Grid item xs={12} md={7} className={classes.carrerContent}>
             <div className={classes.openToNewPeople}>
@@ -30,7 +30,7 @@ const Carrer = () => {
           </Grid>
 
           <Grid item xs={12} md={5}>
-            <img src={island} alt={'island'} />
+            <img src={island} alt={'island'} className={classes.IslandImg} />
           </Grid>
         </Grid>
       </section>

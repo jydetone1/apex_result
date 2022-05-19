@@ -15,7 +15,7 @@ const Properties = () => {
   return (
     <section id={'properties'}>
       <div className={classes.propertiesContentWrapper}>
-        <Typography className={classes.proptertiesText} variant='h4'>
+        <Typography className={classes.propertiesText} variant='h4'>
           properties
         </Typography>
         <Typography className={classes.PropertiesDescription} variant='body1'>

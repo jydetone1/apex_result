@@ -15,15 +15,19 @@ const Insights = () => {
       <section className={classes.insightWrapper}>
         <h4>insights</h4>
         <Grid container>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} className={classes.contentDesc}>
             <div className={classes.insightMenuItems}>
               <span>press</span>
               <span>blog</span>
               <span>video</span>
               <span>news</span>
             </div>
+            <img
+              src={earth}
+              alt={'earth'}
+              className={classes.insightRandomImg}
+            />
             <div>
-              <img src={earth} alt={'earth'} />
               <div className={classes.PostDateDesc}>
                 <small>
                   Sep 11, 2020 <span>BLOG</span>
@@ -90,7 +94,7 @@ const Insights = () => {
         </Grid>
       </section>
 
-      <section className={classes.subcribeWrapper}>
+      <section className={classes.subscribeWrapper}>
         <div className={classes.subscribeNewsLetter}>
           <h4>Subscribe to our newsletter</h4>
           <span>Keep up with our latest news</span>
@@ -103,7 +107,6 @@ const Insights = () => {
               name='name'
               placeholder='Email Address'
               type='text'
-              className={classes.root}
             />
             <Button className={classes.btnSubscribe} variant='contained'>
               subscribe
