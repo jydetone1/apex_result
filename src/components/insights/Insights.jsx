@@ -28,7 +28,7 @@ const Insights = () => {
                   key={index}
                   onClick={() => setAddActiveInsights(item)}
                   className={` ${
-                    addActiveInsights == item ? classes.addActive : ''
+                    addActiveInsights === item ? classes.addActive : ''
                   }`}
                 >
                   {item}

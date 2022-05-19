@@ -70,7 +70,6 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('xs')]: {
       height: '100vh',
       //   height: '100vh',
-      backgroundSize: 'cover',
       backgroundPosition: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
